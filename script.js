@@ -1,0 +1,45 @@
+const ideen = [
+  "Picknick bei Sonnenuntergang",
+  "Gemeinsam Pizza machen",
+  "Spaziergang mit Eis",
+  "Filmabend mit Motto",
+  "Koch-Challenge zuhause",
+  "Brettspielabend",
+  "Dart spielen",
+  "Billard spielen",
+  "Wandern gehen",
+  "Fahrradtour",
+  "Tretboot fahren",
+  "Schwimmen gehen",
+  "Sternenhimmel beobachten",
+  "Zoo oder Tierpark",
+  "Botanischer Garten",
+  "Flohmarkt besuchen",
+  "Tanzkurs",
+  "Yoga-Challenge",
+  "Bouldern",
+  "Trampolinhalle",
+  "Picknick am See",
+  "Alte Fotos austauschen",
+  "Buchladen-Date",
+  "Fantasiereise",
+  "Blind Zeichnen",
+  "Puzzlen",
+  "Stockbrot grillen",
+  "Brunchen",
+  "Kuchen backen",
+  "Sushi selbst machen",
+  "Rollenspiel-Date",
+  "Fragen-Date",
+  "Truth-or-Dare",
+  "Geocaching",
+  "Quizabend",
+  "Koch-Challenge",
+  "Story weiterschreiben",
+  "Zeitkapsel machen" 
+];
+
+function zieheIdee() {
+  const zufall = Math.floor(Math.random() * ideen.length);
+  document.getElementById("notiz").innerText = ideen[zufall];
+}
